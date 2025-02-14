@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse4Pets</title>
+    <link rel="shortcut icon" href="./c1-assets/logo-header.png" type="image/x-icon">
+    <!-- Font awesome cdn -->
+    <script src="https://kit.fontawesome.com/af3f8f1a52.js" crossorigin="anonymous"></script>
+
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+    <!-- ADLaM Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <!-- Sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bg-btn': '#FFDC26'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .adlam-display-font {
+            font-family: "ADLaM Display", serif;
+        }
+
+        .sora-font {
+            font-family: "Sora", serif;
+        }
+    </style>
+
+</head>
+
+<body class="">
+    <!-- navbar  -->
+    <div class="sora-fonts navbar w-full mx-auto bg-[#FFF9F4] px-5 lg:px-24 py-1">
+        <div class="navbar-start">
+            <div class="flex items-center gap-3">
+                <img class="w-full" src="./c1-assets/logo-header.png" alt="">
+                <a class="text-2xl invisible md:visible">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+            </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a class="font-normal text-xl">Find a pet</a></li>
+                <li><a class="font-normal text-xl">Breeds</a></li>
+                <li><a class="font-normal text-xl">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end gap-3 invisible md:visible">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a class="bg-white border rounded-md px-4 py-1 text-xl border-yellow-400">Login</a>
+            <a class="bg-bg-btn rounded-md px-4 py-1 border border-[#FFDC26] text-xl">Register</a>
+        </div>
+        <div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <!-- <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-24 shadow p-0">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                </ul> -->
+            </div>
+        </div>
+
+    </div>
+
+    <header class="container mx-auto px-4 lg:px-14 lg:relative">
+        <!-- banner section -->
+        <div class="relative">
+            <!-- text-section -->
+            <div class="lg:absolute absolute -top-80 lg:top-10 md:-top-32 ">
+                <h2 class="adlam-display-font text-5xl mb-4 text-black">
+                    Pamper Your Pet, <br>
+                    Because They Deserve <br>
+                    the Bes
+                </h2>
+                <p class="sora-font text-gray-500 mb-6">
+                    Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now
+                    and make tails wag with joy!
+                </p>
+                <button class="bg-bg-btn text-xl sora-font py-2 px-6 rounded-lg animate-bounce text-black">
+                    Find a pet
+                </button>
+            </div>
+            <!-- image section -->
+            <div class="mt-80 lg:-mt-1 md:mt-36">
+                <img class="max-w-full" src="c1-assets/cat-big.png" alt="">
+            </div>
+
+        </div>
+    </header>
+    <main class="container mx-auto px-4 lg:px-14">
+        <!-- browse category section -->
+        <section class="mt-24 mb-28">
+            <h3 class="adlam-display-font text-3xl font-normal mb-12 text-black">Browse By Categories</h3>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 md:gap-4">
+                <!-- card - 1 -->
+                <div class="bg-[#F9DF8A] text-center py-8 rounded-lg">
+                    <div class="avatar">
+                        <div class="w-20 p-4 rounded-full bg-white">
+                            <img class="w-16" src="c1-assets/dog-cartoon.png" />
+                        </div>
+                    </div>
+                    <h4 class="font-semibold text-base mb-2 text-black">Dog</h4>
+                    <p class="text-sm">3 items</p>
+                </div>
+                <!-- card - 2 -->
+                <div class="bg-[#F9DF8A] text-center py-8 rounded-lg">
+                    <div class="avatar">
+                        <div class="w-20 p-4 rounded-full bg-white">
+                            <img class="w-16" src="c1-assets/fish-cartoon.png" />
+                        </div>
+                    </div>
+                    <h4 class="font-semibold text-base mb-2 text-black">Fish</h4>
+                    <p class="text-sm">3 items</p>
+                </div>
+                <!-- card - 3 -->
+                <div class="bg-[#F9DF8A] text-center py-8 rounded-lg">
+                    <div class="avatar">
+                        <div class="w-20 p-4 rounded-full bg-white">
+                            <img class="w-16" src="c1-assets/cat-cartoon.png" />
+                        </div>
+                    </div>
+                    <h4 class="font-semibold text-base mb-2 text-black">Cat</h4>
+                    <p class="text-sm">3 items</p>
+                </div>
+                <!-- card - 4 -->
+                <div class="bg-[#F9DF8A] text-center py-8 rounded-lg">
+                    <div class="avatar">
+                        <div class="w-20 p-4 rounded-full bg-white">
+                            <img class="w-16" src="c1-assets/bird-cartoon.png" />
+                        </div>
+                    </div>
+                    <h4 class="font-semibold text-base mb-2 text-black">Birds</h4>
+                    <p class="text-sm">3 items</p>
+                </div>
+                <!-- card - 5 -->
+                <div class="bg-[#F9DF8A] text-center py-8 rounded-lg">
+                    <div class="avatar">
+                        <div class="w-20 p-4 rounded-full bg-white">
+                            <img class="w-16" src="c1-assets/mouse-cartoon.png" />
+                        </div>
+                    </div>
+                    <h4 class="font-semibold text-base mb-2 text-black">Small pet</h4>
+                    <p class="text-sm">3 items</p>
+                </div>
+                <!-- card - 6 -->
+                <div class="bg-[#F9DF8A] text-center py-8 rounded-lg">
+                    <div class="avatar">
+                        <div class="w-20 p-4 rounded-full bg-white">
+                            <img class="w-16" src="c1-assets/rabbit-cartoon.png" />
+                        </div>
+                    </div>
+                    <h4 class="font-semibold text-base mb-2 text-black">Rabit</h4>
+                    <p class="text-sm">3 items</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
